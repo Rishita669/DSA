@@ -75,6 +75,39 @@ public class LoopsP {
         else{
             System.out.println("The number is not prime");
         }
+    // Read a set of integers and print the sum of all even numbers and the sum of all odd numbers
+        int evenSum = 0;
+        int oddSum = 0;
+        System.out.print("Enter the number of integers: ");
+        int count = sc.nextInt();
+        for(int s=1; s<=count; s++){
+            System.out.print("Enter the number: ");
+            int Num = sc.nextInt();
+            if(Num%2==0){
+                evenSum+=Num;
+            }
+            else{
+                oddSum+=Num;
+            }
+        }
+        System.out.println("Sum of all even numbers is: "+evenSum);
+        System.out.println("Sum of all odd numbers is: "+oddSum);
+       }
+       // Print factorial of a number
+       int fact = 1;
+       int factNum = sc.nextInt();
+       System.out.print("Enter the number to find factorial: ");
+       factNum = sc.nextInt();
+       for(int f=1; f<=factNum; f++){
+              fact *= f;
+       }    
+       System.out.println("Factorial of "+factNum +" is "+fact + ".");
+       // Multiplication of a table 
+       int mul;
+       System.out.print("Enter the number to print multiplication table: ");
+       mul = sc.nextInt();
+       for(int m=1; m<=12; m++){
+        System.out.println(mul + "*" + m + "=" +(mul*m));
        }
     }
 }
