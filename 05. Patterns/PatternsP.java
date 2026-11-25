@@ -27,6 +27,30 @@ public class PatternsP{
            }
            System.out.println();
         }
+        // Print Character Pattern
+        int c;
+        c = sc.nextInt();
+        char ch = 'A';
+        for(int line=1; line<=c; line++){
+            for(int chars=1; chars<=line; chars++){
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    // Number Pyramid pattern
+    int num;
+    num = sc.nextInt();
+    for(int x=1; x<=num; x++){
+        for(int y=1; y<=num-x; y++){
+            System.out.print(" ");
+        }
+        for(int y=1; y<=x; y++){
+            System.out.print(x+" ");
+        }
+        System.out.println();
+    }
+
     }
 
 }
